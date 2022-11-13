@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/app.js.js",
+    "server": "nodemon backend/src/index.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "googleapis": "^109.0.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "siwe": "^1.0.0"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
